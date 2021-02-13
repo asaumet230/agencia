@@ -1,0 +1,33 @@
+extends ./layout/index
+
+block slider 
+    .slider 
+        h1 Rio de Janeiro
+        em aventura 
+block contenido 
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre Nosotros 
+        .row.mb-5
+            .col-md-6.text-justify
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet aliquam augue, ac elementum metus auctor quis. Nulla semper, dolor eget aliquam commodo, nisl purus egestas purus, nec consectetur ligula diam vitae sapien. Nam rhoncus libero sit amet ligula bibendum pellentesque. Morbi tristique dictum tellus sed feugiat. Aliq.
+                p Mauris accumsan, sem vel tempus pharetra, odio elit vehicula urna, quis viverra libero elit quis enim. Ut luctus velit ex, vitae pulvinar dui viverra et. Phasellus venenatis hendrerit tristique.
+
+            .col-md-6 
+                img(src="/img/inicio_nosotros.jpg", alt="imagen-viaje-grecia", class="img-fluid")
+            
+        h2.text-center.mb-5 Destinos Preferidos 
+        include ./layout/bloque_viajes
+    
+    .descuento
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido
+                        h3 5% de descuento 
+                        p.titulo Viaje a Canada 
+                        p.fecha 20 de Junio del 2021 - 10 de Julio del 2021
+                        p.precio $ 2.500 USD
+    
+    .container
+        h2.mt-5.mb-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales
