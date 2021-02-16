@@ -9,6 +9,7 @@ const db = new Sequelize(process.env.BD_NOMBRE, process.env.BD_USER, process.env
     port: process.env.BD_PORT,
     dialect: 'postgres',
     protocol: 'postgres',
+    connectionString: process.env.DATABASE_URL,
     ssl: { rejectUnauthorized: false },
     define: {
         timestamps: false
